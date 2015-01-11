@@ -50,8 +50,8 @@ new AnimationSlider($('.js-animation-header'), headerImages);
  
  Его значения по-умолчанию:
  
- {
- 
+   {
+   
       // селектор элемента с фото
        selectorElem: '[data-elem="photo"]',
        
@@ -67,5 +67,5 @@ new AnimationSlider($('.js-animation-header'), headerImages);
        // Признак Использовать ли css анимацию
        useCssAnimation: Modernizr.csstransforms && Modernizr.csstransitions
        
-    }
+   }
       
