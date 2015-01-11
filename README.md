@@ -68,4 +68,11 @@ new AnimationSlider($('.js-animation-header'), headerImages);
        useCssAnimation: Modernizr.csstransforms && Modernizr.csstransitions
        
    }
+   
+  ---
+  
+  Фотографии в слайдере сортируются случайным образом
+  
+  По-умолчанию, если браузер поддерживает css transforms и css transitions 
+  для анимации изображения используется css, иначе применяется jquery анимация
       
