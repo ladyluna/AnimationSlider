@@ -45,3 +45,27 @@ new AnimationSlider($('.js-animation-header'), headerImages);
       
       'shift-top-down' -  Сдвиг "Сверху-Вниз"
       
+      
+ также при инициализации можно указать третий необязательный параметр params:
+ 
+ Его значения по-умолчанию:
+ 
+ {
+ 
+      // селектор элемента с фото
+       selectorElem: '[data-elem="photo"]',
+       
+       // задержка перед началом Анимации
+       delayStartAnimation: 500,
+       
+       // продолжительность смены кадров
+       durationChangeAnimation: 2000,
+       
+       // продолжительность анимации (для css-анимации прописана в стилях)
+       durationAnimation: 15000,
+       
+       // Признак Использовать ли css анимацию
+       useCssAnimation: Modernizr.csstransforms && Modernizr.csstransitions
+       
+    }
+      
