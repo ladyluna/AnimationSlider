@@ -19,7 +19,7 @@ var AnimationSlider = (function() {
 /** 
  * @constructor AnimationSlider
  *
- * @param {jQuery Object} $container контейнер для анимированной шапки
+ * @param {jQuery Object} $container контейнер
  * @param {Object} arrayImages массив картинок (пути до картинок и виды анимаций)
  * @param {Object} params параметры
  * 
@@ -127,7 +127,7 @@ AnimationSlider.prototype = {
      *
      * @method init
      *
-     * @param {jQuery Object} $container контейнер для анимированной шапки
+     * @param {jQuery Object} $container контейнер
      * @param {Object} arrayImages данные 
      * @param {Object} params параметры
      */
@@ -145,7 +145,8 @@ AnimationSlider.prototype = {
 
         that.useCssAnimation = that._config.useCssAnimation;
 
-        // Дописываю в массив: названия типов анимаций, признак загрузки изображений и признак ошибки при загрузке
+        // Дописываю в массив: названия типов анимаций, признак загрузки изображений 
+        // и признак ошибки при загрузке
         for (var i = 0; i < that.shuffleImages.length; i++) {
 
             that.shuffleImages[i].nameAnimation = that.namesAnimation[that.shuffleImages[i].animation];
@@ -153,7 +154,7 @@ AnimationSlider.prototype = {
             that.shuffleImages[i].errorFlag = 'false';
         }
 
-        // Предзагрузка фоток
+        // Предзагрузка фото
         that.preloadPhotos();
         
         that.$elems = [];
@@ -172,7 +173,8 @@ AnimationSlider.prototype = {
     },
 
     /**
-     * Показываем первую загруженную картинку (в порядке очереди - согласно последовательности в массиве that.shuffleImages)
+     * Показываем первую загруженную картинку 
+     * (в порядке очереди - согласно последовательности в массиве that.shuffleImages)
      *
      * @method showFirstPicture
      *
@@ -269,7 +271,8 @@ AnimationSlider.prototype = {
     },
 
     /**
-     * Показываем следующую загруженную картинку (в порядке очереди - согласно последовательности в массиве that.shuffleImages)
+     * Показываем следующую загруженную картинку 
+     * (в порядке очереди - согласно последовательности в массиве that.shuffleImages)
      *
      * @method showNextPicture
      *
