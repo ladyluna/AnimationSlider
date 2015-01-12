@@ -13,13 +13,13 @@ http://codepen.io/ladyluna/pen/vEgQLJ
 
 Пример инициализации:
 
-new AnimationSlider($('.js-animation-header'), headerImages);
+     new AnimationSlider($('.js-animation-header'), headerImages);
  
  где 
  
- $('.js-animation-header') - контейнер для слайдера,
- 
- headerImages - массив из объектов:
+  $('.js-animation-header') - контейнер для слайдера,
+  
+  headerImages - массив из объектов:
  
   var headerImages = [
   
@@ -46,9 +46,9 @@ new AnimationSlider($('.js-animation-header'), headerImages);
       'shift-top-down' -  Сдвиг "Сверху-Вниз"
       
       
- также при инициализации можно указать третий необязательный параметр params:
+ также при инициализации можно указать третий необязательный параметр - Объект из параметров:
  
- Его значения по-умолчанию:
+   Его значения по-умолчанию:
  
    {
    
